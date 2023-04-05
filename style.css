@@ -7,56 +7,63 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: hsl(0, 0%, 40%);
 }
 
-header {
-  padding-block-start: 96px;
-  padding-block-end: 64px;
-  background-color: hsl(0deg, 0%, 100%);
-  border-bottom: 8px solid hsl(0, 0%, 60%);
-}
-
-main {
-  padding-block-start: 64px;
-  padding-block-end: 64px;
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: 800;
+  margin-bottom: 3rem;
 }
 
 p {
   font-size: 1.25rem;
   line-height: 1.5;
+  margin: 0;
+  margin-bottom: 1rem;
+  font-weight: 400;
 }
 
-.max-width-wrapper {
-  margin-inline-start: auto;
-  margin-inline-end: auto;
-  max-width: 800px;
+p:last-child {
+  margin-bottom: 0;
 }
 
-.title {
-  font-size: 2rem;
-  font-weight: 800;
-  margin-bottom: 48px;
-}
-
-.intro-chunk {
-  padding-inline-start: 24px;
-  max-width: 430px;
-}
-
-.intro-chunk strong {
+strong {
   font-weight: 800;
   color: hsl(160, 100%, 30%);
 }
 
-.intro-chunk p {
-  font-weight: 400;
+header {
+  border-bottom: 8px solid hsl(0, 0%, 60%);
+}
+
+main {
+  padding: 64px 0;
+  background-color: hsl(0, 0%, 40%);
+}
+
+.max-width-wrapper {
+  margin: 0 auto;
+  padding: 0 24px;
+  max-width: 800px;
+}
+
+.title {
+  margin-bottom: 48px;
+}
+
+.intro-chunk {
+  padding-block-start: 96px;
+  padding-block-end: 64px;
+  max-width: 415px;
 }
 
 .card {
-  padding: 8px 24px 24px;
+  padding: 24px;
   background-color: hsl(0, 0%, 100%);
   border-bottom: 8px solid hsl(0, 0%, 60%);
+  margin: 0 -24px;
 }
 
 .card p {
@@ -64,11 +71,15 @@ p {
 }
 
 .indented-heading {
+  font-size: 1.5rem;
+  line-height: 1.2;
   margin: 0;
   width: fit-content;
   background-color: hsl(45, 100%, 50%);
   margin-inline-start: -32px;
+  margin-block-start: -16px;
+  margin-block-end: 1rem;
   border-bottom: 8px solid hsl(45, 100%, 40%);
-  padding: 16px 32px 16px;
+  padding: 16px 32px;
 }
 /* Add styles here! */
